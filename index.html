@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/Favicon.png.png">
+    <title>Green World Travel</title>
+</head>
+<body>
+    <header class="header">
+    <div class="header__box">
+        <div class="logo">
+            <a href="index.html"><img src="./assets/logo negro.png"></a>
+        </div>
+        <nav class="nav__header">
+            <a href="nosotros.html">nosotros</a>
+            <a href="tours.html">tours</a>
+            <a href="contacto.html">contacto</a>
+            <a href="blog.html">blog</a>
+            <!--<a href="#">iniciativa green</a>--->
+        </nav> 
+    </div>
+    <div class="svg-header" style="height: 150px; overflow: hidden;" >
+        <svg viewbox="0 0 500 150" preserveaspectratio="none"
+             style="height: 100%; width: 100%;">
+            <path d="M-17.21,31.09 C309.53,135.70 349.20,-49.98 534.14,96.22 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #191929;"></path>
+        </svg>
+    </div>
+</header>
+    <main>
+        <!--<a href="#contacto">Suscribete</a>-->
+        <h1 class="titulo">¡Conoce las 7 Maravillas del mundo!</h1>
+        <hr>
+        <div class="contenedor">
+            <div class="card">
+                <figure>
+                    <img src="assets/TAJMAHAL.jpg">
+                    <div class="capa">
+                        <h3>Taj Mahal - India</h3>
+                        <p>El mausoleo del siglo XVII, revestido de mármol, es considerado una obra maestra arquitectónica y atrae anualmente hasta ocho millones de turistas.</p>
+                    </div>
+                </figure>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="assets/PETRA.jpg">
+                    <div class="capa">
+                        <h3>Petra - Jordania</h3>
+                        <p>Es especialmente conocido por las fachadas de los templos mortuorios, esculpidas directamente en la roca.</p>
+                    </div>
+                </figure>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="assets/MURALLACHINA.jpg">
+                    <div class="capa">
+                        <h3>La Gran Muralla china</h3>
+                        <p> Con más de 6000 kilómetros de largo, la Gran Muralla china fue concebida como un muro defensivo.</p>
+                    </div>
+                </figure>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="assets/CHECHENITZA.jpg">
+                    <div class="capa">
+                        <h3>Chichén Itzá - México</h3>
+                        <p>En la ciudad maya de Chichén Itzá, en México, se levanta en su centro un templo piramidal que también era un centro político-religioso.</p>
+                    </div>
+                </figure>
+            </div> 
+        </div>
+        <div class="contenedor2">
+            <div class="card">
+                <figure>
+                    <img src="assets/MACHUPICCHU.jpg">
+                    <div class="capa">
+                        <h3>Machu Picchu - Perú</h3>
+                        <p>En Machu Picchu, Perú, se ve también la otra cara de la fama de las maravillas del mundo: las ruinas de la ciudad incaica esconden historia y patrimonio vivo</p>
+                    </div>
+                </figure>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="assets/COLISEUM.jpg">
+                    <div class="capa">
+                        <h3>Coliseo Romano - Italia</h3>
+                        <p> En su día escenarios de espectáculos y luchas de gladiadores, es hoy una de las principales atracciones de la capital italiana.</p>
+                    </div>
+                </figure>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="assets/CRISTOREDENTOR.jpg">
+                    <div class="capa">
+                        <h3>El Cristo Redentor - Brasil</h3>
+                        <p>Tiene 30 metros de altura y pesa 1145 toneladas.En Río de Janeiro, el monumental Cristo Redentor se levanta sobre la colina del Corcovado.</p>
+                    </div>
+                </figure>
+            </div>
+        </div>
+    </main>
+    <section class="section__top">
+        <div class="block__section">
+            <img src="./assets/travel with us.png" class="block__img" >
+            
+        </div>
+        <!---este es un audio que me relaja mucho ...y si a vos te molesta podes silenciarlo desde la pestaña de la pagina te aparecera una bocina que podras cancelar y asi se ira el audio .... :) ------>
+        <audio autoplay>
+            <source src="/assets/alborada-audio.mp3" type="audio/mp3">
+        </audio>
+    </section>
+    <!--este es el footer que llevara mis redes sociales y derechos de autor-->
+    <footer>
+         <div class="div__footer"> 
+             <div class="block__div">
+                <a href="tours.html" class="block__btn">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    click here
+                </a>
+        </div>
+        <div id="contacto">
+            <h2 class="h2_miniform">Suscríbete a nuestro</h2>
+            <h3 class="h3_miniform">Boletín</h3>
+            <h5 class="h5_miniform">Recibirás promociones y descuentos, además información de nuestros tours y fechas</h5>
+            <form class="caja_formulario">
+            <label for="nombre"></label>
+                <input type="text" id="nombre" placeholder="Nombre" required>
+            <label for="email"></label>
+                <input type="email" id="email" placeholder="Correo" required>
+            <input class="input2" type="submit">
+            </form>
+        </div>
+            <div class="nav_dos">
+                <a href="nosotros.html">nosotros</a>
+                <a href="tours.html">tours</a>
+                <a href="contacto.html">contacto</a>
+                <a href="blog.html">blog</a>
+                <!--<a href="#">iniciativa green</a>-->
+            </div>  
+            <div class="div__p">
+                    <p>Terminos y condiciones generales</p>
+                    <p>Politicas de devolucion,anulacion y cambio</p>
+                    <p>Copyrigth &copy;2022</p>
+                 <div class="div_a">
+                    <a href="#"><img src="assets/intstagram.png"></a>
+                    <a href="#"><img src="assets/twitwer.png"></a>
+                    <a href="#"><img src="assets/face-01.png"></a>     
+                 </div>
+            </div>
+            <hr>
+            <p class="diseñador">
+             hecho con ❤️ x bartydesing &check;
+            </p>
+            <audio autoplay>
+            <source src="/assets/alborada-audio.mp3" type="audio/mp3">
+            </audio>
+         </div>
+    </footer>
+</body>
+</html>
+
+
+    

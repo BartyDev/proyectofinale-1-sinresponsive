@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Raleway:wght@200;300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*body styles*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+/*trabajamos el navegador*/
+
+.header {
+    background-image: linear-gradient(60deg, rgba(20, 10, 156, 0.699) 0%, rgba(175, 251, 152, 0.541) 100%), url("../assets/mounitain1.jpg");
+    width: 100%; 
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+    
+}
+.header__box {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+
+.logo a img{
+    margin: auto;
+    height: 400px;  
+}
+
+.nav__header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 190px;
+    width: 40%;
+    
+    
+}
+
+.nav__header a {
+    text-decoration: none;
+    color: #0c7c26;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    padding: 12px 17px;
+    background-color: rgba(11,103,123,0);
+    border-radius: 8px;
+    height: 42px;  
+    transition: all 300ms ease;
+}
+
+.nav__header a:hover {
+    transform: scale(1.1);
+    background-color: rgba(11,103,123,0);
+    box-shadow: 0px 0px 10px 0px rgba(92, 80, 80, 0.733);
+    border-radius: 10px; 
+    border: 1px #9de707 solid;
+    color: #2f00ffc0;
+}
+
+.svg-header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*/*ELEMENTOS Y VALORES DE LAS CARD*/
+
+/*contenedor*/
+
+main {
+    background-color: #191929;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    max-height: max-content;
+    
+}
+.titulo {
+    text-align: center;
+    font-family: 'Grape Nuts', cursive;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.contenedor {
+    display: flex;
+    padding: 100px 0px 0px; 
+}
+
+.contenedor2 {
+    display: flex;
+    padding: 100px 0px; 
+}
+
+/*cards*/
+
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.card figure {
+    position: relative;
+    height: 350px;
+    width: 350px;
+    overflow: hidden;
+    border: 1px solid #9acd32;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    cursor: none;
+    border-radius: 10px;    
+}
+
+.card figure img {
+    width: 105%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    object-fit: cover;
+    object-position: center;
+    /*animation: movimiento 2.5s linear infinite;*/
+}
+
+
+.card figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11,103,123,0.2);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.card figure:hover > .capa {
+     opacity: 1;
+     visibility: visible;
+     font-weight: bold;  
+}
+
+.card figure:hover > .capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.card figure:hover > img {
+    transform: scale(1.2);
+    filter: blur(1.5px);
+}
+
+.card figure .capa h3 {
+    color: #fff;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.card figure .capa p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+/* contenido de section*/
+
+.block__section {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+.block__img {
+    display: flex;
+    width: 100%;
+    height:300px;
+}
+
+/*contenido del FOOTER*/
+
+.div__footer {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    background-image: linear-gradient(60deg, rgba(102, 99, 134, 0.596) 0%, rgba(175, 251, 152, 0.336) 100%), url("../assets/mounitain1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*--diseño de boton de luz--*/
+
+.block__btn {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #45c763;
+    letter-spacing: 4px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 10px;
+    font-weight: bold;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    margin-top: 20px;
+    
+}
+
+.block__btn:hover {
+    background: #FFBF00;
+    box-shadow: 0 0 10px #FFBF00, 0 0 40px #FFBF00, 0 0 80px #FFBF00;
+    transition-delay: 1s;
+}
+
+.block__btn span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#FFBF00);
+}
+
+.block__btn:hover #span1 {
+    left: 100%;
+    transition: 1s;
+}
+
+#span3 {
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#FFBF00);
+}
+
+.block__btn:hover #span3 {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#FFBF00);
+}
+
+.block__btn:hover #span2 {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#span4 {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#FFBF00);
+}
+
+.block__btn:hover #span4 {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+/*MINI FORMULARIO*/
+
+
+.h2_miniform {
+    display: flex;
+    font-size: 200px;
+    justify-content: space-around;
+    font-family: 'Grape Nuts', cursive;
+    color: #FFBF00;
+}
+
+.h3_miniform {
+    display: flex;
+    font-size: 150px;
+    justify-content: space-around;
+    font-family: 'Grape Nuts', cursive;
+    color: #FFBF00;  
+}
+
+.h5_miniform {   
+    font-size: 15px;
+}
+
+.caja_formulario {
+    display: inline-block;
+    margin-top: 2em;
+    padding: 1em 3em;
+    background: rgba(255, 255, 255, 0.17);
+    width: 50%;
+    border-radius: 1.5rem;
+      
+}
+
+label {
+    display: inherit;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .5px;
+}
+
+input {
+    padding: .8em 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    font-size: 1.2rem;
+    color: rgb(5, 10, 70);
+    letter-spacing: .5px;
+    border: 1px solid #000;
+}
+
+.caja_formulario .input2 {
+    width: 30%;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: none;
+    color: #2f00ffc0;
+    border: 0.5px solid #9de707 ;
+}
+
+.caja_formulario .input2:hover {
+    transform: scale(1.1);
+    background-color: rgba(11,103,123,0);
+    box-shadow: 0px 0px 10px 0px rgba(92, 80, 80, 0.733);
+    border-radius: 10px; 
+}
+
+/*segundo navegador en footer*/
+
+.nav_dos a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 30px 40px;
+    transition: all 300ms ease;
+}
+
+.nav_dos a:hover {
+    transition: all 500ms ease;
+    color: #00ff00;
+}
+
+.div__p {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.div_a img {
+    padding-right: 20px;
+}
+
+hr {
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 0px 40px;
+    box-shadow: 0 0 2px #000000, 0 0 40px #000000b6, 0 0 80px #1c4124;
+    border-radius: 50px;
+}
+
+.diseñador {
+    padding-top: 10px;
+    color: #fff;
+}
+
+/*pagina NOSOTROS*/
+
+.somos_div {
+     display: flex;
+    font-size: 80px;
+    font-family: 'Grape Nuts', cursive;
+    color: #FFBF00;
+}
+
+/*pagina tours*/ 
+
+.img_tours {
+    width: 500px;
+    text-align: center;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+
+
+/*pagina blog*/
+
+.h5_miniform__2 {
+    font-size: 20px;
+    color: #00ff008c;
+}
